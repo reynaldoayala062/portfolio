@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import SideBar from '../components/Sidebar';
 import Navbar from '../components/NavBar';
+import Home from '../components/Home'
 
-const Home = () => {
+const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -13,8 +14,9 @@ const Home = () => {
         <>
             <SideBar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
+            <Home/>
         </>
     );
 };
 
-export default Home;
+export default HomePage;
