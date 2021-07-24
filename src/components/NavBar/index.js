@@ -8,7 +8,7 @@
     <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>Dolla</NavLogo>
+                <NavLogo to='/'>Reynaldo Ayala</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
