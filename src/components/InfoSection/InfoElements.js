@@ -20,9 +20,14 @@ export const InfoWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 868px) {
+        max-width: 650px;
+        height: 850px;
+    }
+
+    @media screen and (max-width: 568px) {
         max-width: 300px;
-        height: 650px;
+        height: 750px;
     }
 
 `;
