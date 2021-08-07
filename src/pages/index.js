@@ -3,6 +3,7 @@ import SideBar from '../components/Sidebar';
 import Navbar from '../components/NavBar';
 import Home from '../components/Home'
 import InfoSection from '../components/InfoSection'
+import Footer from '../components/Footer'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 
@@ -22,6 +23,7 @@ const HomePage = () => {
             <InfoSection {...homeObjTwo}/>
             <Services/>
             <InfoSection {...homeObjThree}/>
+            <Footer/>
         </>
     );
 };
