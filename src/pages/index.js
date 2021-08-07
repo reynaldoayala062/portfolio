@@ -3,7 +3,7 @@ import SideBar from '../components/Sidebar';
 import Navbar from '../components/NavBar';
 import Home from '../components/Home'
 import InfoSection from '../components/InfoSection'
-import { homeObjOne } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +18,8 @@ const HomePage = () => {
             <Navbar toggle={toggle} />
             <Home/>
             <InfoSection {...homeObjOne}/>
+            <InfoSection {...homeObjTwo}/>
+            <InfoSection {...homeObjThree}/>
         </>
     );
 };

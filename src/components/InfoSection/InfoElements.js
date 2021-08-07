@@ -19,17 +19,33 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-`;
-
-export const InfoRow = styled.div`
-    display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
-    align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => imgStart ? `'col1 col2` : `'col1 col1' 'col2 col2'`}
-    };
+        max-width: 300px;
+        height: 650px;
+    }
+
+`;
+
+// export const InfoRow = styled.div`
+//     display: grid;
+//     grid-auto-columns: minmax(auto, 1fr);
+//     align-items: center;
+//     grid-template-areas: ${({ imgStart }) => imgStart ? `'col1 col2'` : `'col1 col2'`};
+
+//     @media screen and (max-width: 768px) {
+//         grid-template-areas: ${({imgStart}) => imgStart ? `'col1 col2` : `'col1 col1' 'col2 col2'`};
+//     }
+// `;
+
+export const InfoRow = styled.div`
+    display: flex;
+    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: ${({imgStart}) => imgStart ? 'column' : 'column-reverse'};
+    }
 `;
 
 export const Column1 = styled.div`
@@ -64,7 +80,7 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 600px;
     color: ${({ lightText}) => (lightText ? '#fff' : '#010606')};
 
     @media screen and (max-width: 480px) {
