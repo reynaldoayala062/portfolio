@@ -10,7 +10,7 @@ const Home = () => {
         setHover(!hover)
     }
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
             </HeroBg>
@@ -18,7 +18,7 @@ const Home = () => {
                 <HeroH1> Welcome to my world </HeroH1>
                 <HeroP> Let me show you around and give you a tour of the place </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                    <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                         Get Started {hover ? <ArrowForward /> : <ArrowRight/> }
                     </Button>
                 </HeroBtnWrapper>
