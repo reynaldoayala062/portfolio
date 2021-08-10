@@ -46,13 +46,32 @@ export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 
-    @media screen and (max-width: 768) {
-        font-size: 40px;
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00FFFF; }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 24px;
     }
 `;
 

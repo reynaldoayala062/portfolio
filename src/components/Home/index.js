@@ -15,7 +15,7 @@ const Home = () => {
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
             </HeroBg>
             <HeroContent>
-                <HeroH1> Welcome to my world </HeroH1>
+                <HeroH1> Hi my name is Reynaldo </HeroH1>
                 <HeroP> Let me show you around and give you a tour of the place </HeroP>
                 <HeroBtnWrapper>
                     <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
