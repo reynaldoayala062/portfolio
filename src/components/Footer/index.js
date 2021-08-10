@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaFacebook,FaInstagram, FaYoutube, FaTwitter, FaLinkedin} from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements'
 
 const Footer = () => {
 
@@ -52,8 +52,9 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/' onClick={toggleHome}> Reynaldo Ayala </SocialLogo>
-                        <WebsiteRights> Reynaldo Ayala ©{new Date().getFullYear()} All rights reserved</WebsiteRights>
+                        <SocialLogo to='/' onClick={toggleHome}> Reynaldo Ayala
+                        </SocialLogo>
+                        <WebsiteRights> ©{new Date().getFullYear()} All rights reserved</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/profile.php?id=100004277175364" target="_blank" aria-label="Facebook">
                                 <FaFacebook/>
