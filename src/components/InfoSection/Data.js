@@ -1,21 +1,19 @@
-import pdf from '../../images/Reynaldo Ayala Resume - Google Docs.pdf'
-
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headline: 'Unlimited Transaction with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Get Started',
+    topLine: 'About Me',
+    headline: 'My passion for coding',
+    description: 'Reason why I became a developer is to bridge the gap between the real world and the tech world. Take a look at my resume and see how I can be a great add on to the team.',
+    buttonLabel: 'Learn more',
     imgStart: false,
     img: require('../../images/svg-1.svg').default,
     alt: 'Car',
     dark: true,
     primary: true,
     darkText: false,
-    url: {pdf}
+    url: require('../../images/Reynaldo Ayala Resume - Google Docs.pdf').default
 };
 
 export const homeObjTwo = {
