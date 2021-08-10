@@ -40,10 +40,10 @@
                         <NavLinks to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-80}> Projects </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80}> Service </NavLinks>
+                        <NavLinks to="skills" smooth={true} duration={500} spy={true} exact='true' offset={-80}> Skills </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="skills" smooth={true} duration={500} spy={true} exact='true' offset={-80}> Skills </NavLinks>
+                        <NavLinks to="blogs" smooth={true} duration={500} spy={true} exact='true' offset={-80}> Blogs </NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
