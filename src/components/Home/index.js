@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Button } from '../ButtonElements'
+import { ButtonLink } from '../ButtonElements'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
 import Video from '../../videos/video.mp4'
 
@@ -15,12 +15,12 @@ const Home = () => {
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
             </HeroBg>
             <HeroContent>
-                <HeroH1> Hi my name is Reynaldo </HeroH1>
-                <HeroP> Let me show you around and give you a tour of the place </HeroP>
+                <HeroH1> Howdy, I'm Reynaldo Ayala</HeroH1>
+                <HeroP> I'm a frontend developer with passion to create unique UX/UI design </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-                        Get Started {hover ? <ArrowForward /> : <ArrowRight/> }
-                    </Button>
+                    <ButtonLink to="skills" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        Get In Touch {hover ? <ArrowForward /> : <ArrowRight/> }
+                    </ButtonLink>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
