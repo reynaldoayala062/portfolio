@@ -33,11 +33,11 @@ export const ContactWrapper = styled.div`
 
 export const ContactRow = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `;
 
