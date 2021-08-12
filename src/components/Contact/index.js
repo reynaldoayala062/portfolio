@@ -23,7 +23,7 @@ const Contact = () => {
                 <ContactRow>
                     <Column1> 
                         <Form onSubmit={sendEmail}>
-                            <FormH1> How can I help</FormH1>
+                            <FormH1> Leave a message</FormH1>
                             <NameContainer>
                                 <ContactItemName>
                                     <FormLabel>First Name</FormLabel>
@@ -34,16 +34,16 @@ const Contact = () => {
                                     <FormInput type="last-name" name="last-name"/>
                                 </ContactItemName>
                             </NameContainer>
-                            <ContactItem>
+                            {/* <ContactItem>
                                 <FormLabel>Phone</FormLabel>
                                 <FormInput type="phone" name="phone"/>
-                            </ContactItem>                    
+                            </ContactItem>                     */}
                             <ContactItem>
                                 <FormLabel>Email</FormLabel>
                                 <FormInput type="email" name="email"/>
                             </ContactItem>
                             <ContactItem>
-                                <FormLabel>How can we help</FormLabel>
+                                <FormLabel>Message</FormLabel>
                                 <Textarea id='textboxid' name="message"/>
                             </ContactItem>
                             <Button>

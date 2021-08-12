@@ -35,7 +35,7 @@ export const ContactRow = styled.div`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
+    
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
     }
@@ -45,6 +45,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    background: red;
 `;
 
 export const Column2 = styled.div`
@@ -71,7 +72,7 @@ export const Form = styled.form`
 `
 
 export const FormH1 = styled.h1`
-
+text-align: center;
 `
 
 export const NameContainer = styled.div`
@@ -82,11 +83,12 @@ export const NameContainer = styled.div`
 export const ContactItemName = styled.div`
     justify-content: space-between;
     padding: 5px;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
 `
 
 export const FormLabel = styled.label`
-
+    
 `
 
 export const FormInput = styled.input`
@@ -94,14 +96,18 @@ export const FormInput = styled.input`
 `
 
 export const ContactItem = styled.div`
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px;
+    text-align: center;
 `
 
 export const Textarea = styled.textarea`
-
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    flex-direction: row;
 `
 
 export const Button = styled.div`
-
+    text-align: center;
 `
