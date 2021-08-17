@@ -1,6 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
-import { ContactContainer, ContactWrapper, ContactRow, Column1, Column2, ImgWrap, Img, Form, FormH1, NameContainer, ContactItemName, FormLabel, FormInput, ContactItem, Textarea, Button, FormButton} from './ContactElements'
+import { ContactContainer, ContactWrapper, ContactRow, Column1, Column2, ImgWrap, Img, Form, FormH1, FormLabel, FormInput, ContactItem, Textarea, Button, FormButton} from './ContactElements'
 
 const Contact = () => {
 
@@ -24,31 +24,21 @@ const Contact = () => {
                     <Column1> 
                         <Form onSubmit={sendEmail}>
                             <FormH1> Leave a message</FormH1>
-                            <NameContainer>
-                                <ContactItemName>
+                                <ContactItem>
                                     <FormLabel>Name</FormLabel>
-                                    <FormInput type="first-name" name="first-name"/>
-                                </ContactItemName>
-                                {/* <ContactItemName>
-                                    <FormLabel>Last Name</FormLabel> 
-                                    <FormInput type="last-name" name="last-name"/>
-                                </ContactItemName> */} 
-                            </NameContainer>
-                            {/* <ContactItem>
-                                <FormLabel>Phone</FormLabel>
-                                <FormInput type="phone" name="phone"/>
-                            </ContactItem>                     */}
-                            <ContactItem>
-                                <FormLabel>Email</FormLabel>
-                                <FormInput type="email" name="email"/>
-                            </ContactItem>
-                            <ContactItem>
-                                <FormLabel>Message</FormLabel>
-                                <Textarea id='textboxid' name="message"/>
-                            </ContactItem>
-                            <Button>
-                                <FormButton type="submit" value="Send">Submit</FormButton>
-                            </Button>
+                                    <FormInput type="name" name="name"/>
+                                </ContactItem>
+                                <ContactItem>
+                                    <FormLabel>Email</FormLabel>
+                                    <FormInput type="email" name="email"/>
+                                </ContactItem>
+                                <ContactItem>
+                                    <FormLabel>Message</FormLabel>
+                                    <Textarea id='textboxid' name="message"/>
+                                </ContactItem>
+                                <Button>
+                                    <FormButton type="submit" value="Send">Submit</FormButton>
+                                </Button>
                         </Form>
                     </Column1>
                     <Column2>

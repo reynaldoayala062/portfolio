@@ -32,12 +32,13 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactRow = styled.div`
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    
+    grid-template-areas: ${({ imgStart }) => imgStart ? `'col1 col2'` : `'col1 col2'`};
+
     @media screen and (max-width: 768px) {
-        flex-direction: column-reverse;
+        grid-template-areas: ${({imgStart}) => imgStart ? `'col1 col2` : `'col1 col1' 'col2 col2'`};
     }
 `;
 
@@ -45,7 +46,6 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
-
 `;
 
 export const Column2 = styled.div`
@@ -75,16 +75,10 @@ export const FormH1 = styled.h1`
 text-align: center;
 `
 
-export const NameContainer = styled.div`
-    display: flex;
-    padding: 10px;
-`
-
 export const ContactItemName = styled.div`
     justify-content: space-between;
     padding: 5px;
     flex-direction: column;
-    
 `
 
 export const FormLabel = styled.label`
@@ -94,12 +88,15 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border: none /* Gray border */;
+    border-bottom: 2px solid #00FFFF;
+    background-color: #010606;
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: horizontal; /* Allow the user to vertically resize the textarea (not horizontally) */
+    color: #00FFFF;
+    
 `
 
 
@@ -114,12 +111,14 @@ export const Textarea = styled.textarea`
     flex-direction: row;
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border: none /* Gray border */;
+    border-bottom: 2px solid #00FFFF;
+    background-color: #010606;
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+    resize: horizontal /* Allow the user to vertically resize the textarea (not horizontally) */;
+    color: #00FFFF;
 `
 
 export const Button = styled.div`
@@ -130,12 +129,18 @@ export const Button = styled.div`
 export const FormButton = styled.button`
     width: 50%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border: none;
+    border-radius: 50px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background: #00FFFF;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff; 
+    }
 `
 
 
