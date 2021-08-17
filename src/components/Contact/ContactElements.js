@@ -45,7 +45,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
-    background: red;
+
 `;
 
 export const Column2 = styled.div`
@@ -84,7 +84,7 @@ export const ContactItemName = styled.div`
     justify-content: space-between;
     padding: 5px;
     flex-direction: column;
-    text-align: center;
+    
 `
 
 export const FormLabel = styled.label`
@@ -92,22 +92,51 @@ export const FormLabel = styled.label`
 `
 
 export const FormInput = styled.input`
-
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 `
+
 
 export const ContactItem = styled.div`
     justify-content: center;
     padding: 10px;
-    text-align: center;
 `
 
 export const Textarea = styled.textarea`
     justify-content: space-around;
     padding: 10px;
-    text-align: center;
     flex-direction: row;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
 `
 
 export const Button = styled.div`
-    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+
 `
+export const FormButton = styled.button`
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+`
+
+
+
