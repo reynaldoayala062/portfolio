@@ -18,7 +18,7 @@ const Home = () => {
                 <HeroH1> Hey, I'm [Rey]naldo Ayala</HeroH1>
                 <HeroP> I'm a frontend developer with passion to create unique UX/UI design </HeroP>
                 <HeroBtnWrapper>
-                    <ButtonLink to="skills" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                    <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                         Get In Touch {hover ? <ArrowForward /> : <ArrowRight/> }
                     </ButtonLink>
                 </HeroBtnWrapper>

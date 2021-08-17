@@ -18,7 +18,7 @@ const Contact = () => {
     
 
     return (
-        <ContactContainer>
+        <ContactContainer id="contact">
             <ContactWrapper>
                 <ContactRow>
                     <Column1> 
@@ -37,7 +37,7 @@ const Contact = () => {
                                     <Textarea id='textboxid' name="message"/>
                                 </ContactItem>
                                 <Button>
-                                    <FormButton type="submit" value="Send">Submit</FormButton>
+                                    <FormButton type="submit" value="Send">Send now</FormButton>
                                 </Button>
                         </Form>
                     </Column1>

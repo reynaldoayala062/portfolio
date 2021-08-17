@@ -72,7 +72,14 @@ export const Form = styled.form`
 `
 
 export const FormH1 = styled.h1`
-text-align: center;
+    color: #00FFFF;
+    font-size: 22px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-left: 10px;
 `
 
 export const ContactItemName = styled.div`
@@ -122,20 +129,19 @@ export const Textarea = styled.textarea`
 `
 
 export const Button = styled.div`
-    justify-content: center;
     margin-left: 10px;
 
 `
 export const FormButton = styled.button`
-    width: 50%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: none;
     border-radius: 50px; /* Rounded borders */
+    background: #00FFFF;
+    padding: 12px 30px; /* Some padding */ 
+    font-size: 16px;
+    border: none;
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    background: #00FFFF;
 
     &:hover {
         transition: all 0.2s ease-in-out;
