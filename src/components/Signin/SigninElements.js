@@ -30,12 +30,12 @@ export const FormWrap = styled.div`
 `;
 
 export const Icon = styled(Link)`
-    margin-left: 32px;
     margin-top: 32px;
     text-decoration: none;
-    color: #fff;
+    color: #010606;
     font-weight: 700;
     font-size: 32px;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         margin-left: 16px;

@@ -18,12 +18,12 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon2}/>
                     <ServicesH2>React.js</ServicesH2>
-                    <ServicesP>Building clean and reusable code for clients and team members</ServicesP>
+                    <ServicesP>Knowledgable in styled components, redux, and more</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
                     <ServicesH2>JavaScript</ServicesH2>
-                    <ServicesP>With great beauty comes great brains</ServicesP>
+                    <ServicesP>Building clean and reusable code for clients and team members</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
             
