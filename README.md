@@ -1,6 +1,6 @@
 # Hey y'all, I'm Rey 👋
 
-## I'm a Full Stack Web Development, Ruby on Rails and JavaScript(React) program 👨‍💻
+## I'm a Full Stack Web Development, Ruby on Rails and JavaScript(React) programer 👨‍💻
 
 - I'm always listening to personal development ⏳
 - Constantly learning something new 🧠
