@@ -2,9 +2,12 @@ import { React, useState } from 'react'
 import { ButtonLink } from '../ButtonElements'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
 import Video from '../../videos/video-3.mp4'
+import ReactPlayer from 'react-player'
 
 const Home = () => {
     const [hover, setHover] = useState(false)
+
+    
  
     const onHover = () => {
         setHover(!hover)
@@ -12,7 +15,7 @@ const Home = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+                <VideoBg autoPlay loop muted src="https://reys-portfolio.s3.us-east-2.amazonaws.com/video+(2).mp4" type="video/mp4" ></VideoBg>
             </HeroBg>
             <HeroContent>
                 <HeroH1> Welcome to the internet </HeroH1>
