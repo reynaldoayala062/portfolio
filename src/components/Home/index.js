@@ -1,8 +1,6 @@
 import { React, useState } from 'react'
 import { ButtonLink } from '../ButtonElements'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
-import Video from '../../videos/video-3.mp4'
-import ReactPlayer from 'react-player'
 
 const Home = () => {
     const [hover, setHover] = useState(false)

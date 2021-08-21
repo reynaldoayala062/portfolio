@@ -14,7 +14,7 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
-    url: require('../../images/Reynaldo Ayala Resume - Google Docs.pdf').default
+    url: "https://reys-portfolio.s3.us-east-2.amazonaws.com/Resume.pdf"
 };
 
 export const homeObjTwo = {
