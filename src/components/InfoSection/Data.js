@@ -14,7 +14,7 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
-    url: "https://reys-portfolio.s3.us-east-2.amazonaws.com/Resume.pdf"
+    url: "https://reys-portfolio.s3.us-east-2.amazonaws.com/Resume+(1).pdf"
 };
 
 export const homeObjTwo = {
