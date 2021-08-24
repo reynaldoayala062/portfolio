@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg  autoPlay={true} loop={true} controls={false} playsInline muted  src="https://reys-portfolio.s3.us-east-2.amazonaws.com/video+(2).mp4" type="video/mp4" ></VideoBg>
+                <VideoBg  autoPlay={true} loop={true} controls={false} playsInline muted  src="https://reys-portfolio.s3.us-east-2.amazonaws.com/video+(7).mp4" type="video/mp4" ></VideoBg>
             </HeroBg>
             <HeroContent>
                 <HeroH1> Welcome to the internet </HeroH1>
