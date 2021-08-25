@@ -29,7 +29,7 @@
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}>
-                    <Img src= {require("../../images/LogoMakr-5oJKOS.png").default} alt=""/>
+                    <Img src={require("../../images/LogoMakr-5oJKOS.png").default} alt=""/>
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
