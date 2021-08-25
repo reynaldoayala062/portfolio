@@ -1,7 +1,7 @@
  import React, { useState, useEffect } from 'react'
  import {FaBars} from 'react-icons/fa'
  import {animateScroll as scroll} from 'react-scroll'
- import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, Img } from './NavbarElements'
+ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, Img, NavBtnCall } from './NavbarElements'
 
  
  const Navbar = ({ toggle }) => {
@@ -49,7 +49,7 @@
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin"> Sign In </NavBtnLink>
+                    <NavBtnCall href="tel:+18326188084"> Call now </NavBtnCall>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

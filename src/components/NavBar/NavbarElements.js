@@ -122,6 +122,27 @@ export const NavBtnLink = styled(LinkR)`
 
 `;
 
+export const NavBtnCall = styled.a`
+    border-radius: 50px;
+    background: #00FFFF;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+
+`;
+
 export const Img = styled.img`
     width: 25%;
 `
