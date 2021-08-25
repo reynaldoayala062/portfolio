@@ -23,7 +23,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarCall href="tel:+18326188084"> Sign In </SidebarCall>
+                    <SidebarCall href="tel:+18326188084"> Call now </SidebarCall>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
