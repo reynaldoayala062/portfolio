@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'About Me',
-    headline: 'Hey, my name is Rey',
+    headline: 'Hello, my name is Rey',
     description: 'My passion to code is to bridge the gap between the real world and the tech world. Take a look at my resume and see how I can be a great add on to the team.',
     buttonLabel: 'Read resume',
     imgStart: false,
