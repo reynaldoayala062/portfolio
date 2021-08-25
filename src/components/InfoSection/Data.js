@@ -10,11 +10,11 @@ export const homeObjOne = {
     buttonLabel: 'Read resume',
     imgStart: false,
     img: require('../../images/svg-1.svg').default,
-    alt: 'Car',
+    alt: 'about',
     dark: true,
     primary: true,
     darkText: false,
-    url: "https://reys-portfolio.s3.us-east-2.amazonaws.com/Reynaldo+A+Resume.pdf"
+    url: "https://reys-portfolio.s3.us-east-2.amazonaws.com/Reynaldo_A_Resume.pdf"
 };
 
 export const homeObjTwo = {
@@ -29,7 +29,7 @@ export const homeObjTwo = {
     buttonLabel: 'Watch projects',
     imgStart: true,
     img: require('../../images/svg-8.svg').default,
-    alt: 'Car',
+    alt: 'projects',
     dark: false,
     primary: false,
     darkText: true,
