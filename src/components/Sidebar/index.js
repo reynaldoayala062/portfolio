@@ -18,8 +18,11 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="skills" onClick={toggle}>
                         Skills
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
-                        Sign Up
+                    <SidebarLink to="blogs" onClick={toggle}>
+                        Blogs
+                    </SidebarLink>
+                    <SidebarLink to="contact" onClick={toggle}>
+                        Contact
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>

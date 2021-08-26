@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <FooterLinksContainer>
+                {/* <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle> About Us </FooterLinkTitle>
@@ -49,7 +49,7 @@ const Footer = () => {
                             <FooterLink to="/signin">Terms of Service</FooterLink>                
                         </FooterLinkItems>
                     </FooterLinksWrapper>
-                </FooterLinksContainer>
+                </FooterLinksContainer> */}
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}> Reynaldo Ayala
