@@ -39,12 +39,13 @@ export const SidebarWrapper = styled.div`
 
 export const SidebarMenu = styled.ul`
     display: grid;
-    grid-template-columns: .88fr;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-columns: .95fr;
+    grid-template-rows: repeat(6, 70px);
     text-align: center;
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px)
+        grid-template-rows: repeat(6, 60px);
+        grid-template-columns: .85fr;
     }
 `
 
@@ -69,6 +70,9 @@ export const SidebarLink = styled(LinkS)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+    margin-left: -12px;
+
+    grid-template-columns: .85fr;
 `;
 
 export const SidebarRoute = styled(LinkR)`
