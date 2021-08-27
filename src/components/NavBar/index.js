@@ -49,7 +49,7 @@
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnCall href="tel:+18326188084"> Call now </NavBtnCall>
+                    <NavBtnCall to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-40} > Contact </NavBtnCall>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

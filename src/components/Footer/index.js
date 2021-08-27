@@ -1,7 +1,7 @@
-import React from 'react'
-import {FaFacebook,FaInstagram, FaYoutube, FaTwitter, FaLinkedin} from 'react-icons/fa'
+import React from 'react' 
+import {FaFacebook,FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub, FaArrowUp } from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements'
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, UpButton} from './FooterElements'
 
 const Footer = () => {
 
@@ -52,9 +52,9 @@ const Footer = () => {
                 </FooterLinksContainer> */}
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/' onClick={toggleHome}> Reynaldo Ayala
+                        <SocialLogo to='/' onClick={toggleHome}> <UpButton> Go to the top</UpButton>
                         </SocialLogo>
-                        <WebsiteRights> ©{new Date().getFullYear()} All rights reserved</WebsiteRights>
+                        <WebsiteRights> ©{new Date().getFullYear()} Reynaldo Ayala All Rights Reserved</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/profile.php?id=100004277175364" target="_blank" aria-label="Facebook">
                                 <FaFacebook/>
@@ -65,11 +65,11 @@ const Footer = () => {
                             <SocialIconLink href="//www.youtube.com/channel/UClF70456tB11P5BP5zxNfHw" target="_blank" aria-label="Youtube">
                                 <FaYoutube/>
                             </SocialIconLink>
-                            <SocialIconLink href="//www.twitter.com/ReynaldoAyala11" target="_blank" aria-label="Twitter">
-                                <FaTwitter/>
-                            </SocialIconLink>
                             <SocialIconLink href="//www.linkedin.com/in/reynaldo-ayala-1b18b172/" target="_blank" aria-label="LinkedIn">
                                 <FaLinkedin/>
+                            </SocialIconLink>
+                            <SocialIconLink href="//www.github.com/reynaldoayala062" target="_blank" aria-label="LinkedIn">
+                                <FaGithub/>
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

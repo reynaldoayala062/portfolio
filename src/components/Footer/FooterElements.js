@@ -112,5 +112,30 @@ export const SocialIconLink = styled.a`
     font-size: 24px;
 `;
 
+export const UpButton = styled.div`
+    border-radius: 20px;
+    background: #00FFFF;
+    white-space: nowrap;
+    padding: 12px 25px;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff; 
+    }
+
+    @media screen and (max-width: 820px) {
+        font-size: 12px;
+    }
+`
 
 

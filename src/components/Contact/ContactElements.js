@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     color: #fff;
-    background: #010606;
+    background: #000;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
