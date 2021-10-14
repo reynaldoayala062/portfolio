@@ -1,5 +1,5 @@
 import React from 'react' 
-import {FaFacebook,FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub, FaArrowUp } from 'react-icons/fa'
+import {FaFacebook,FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub, FaArrowUp, FaArrowCircleUp} from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, UpButton} from './FooterElements'
 
@@ -50,10 +50,9 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer> */}
+                
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/' onClick={toggleHome}> <UpButton> Go to the top</UpButton>
-                        </SocialLogo>
                         <WebsiteRights> ©{new Date().getFullYear()} Reynaldo Ayala All Rights Reserved</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/profile.php?id=100004277175364" target="_blank" aria-label="Facebook">
@@ -74,6 +73,10 @@ const Footer = () => {
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>
+                <br/> 
+                <SocialLogo to='/' onClick={toggleHome}>    
+                    <FaArrowCircleUp color="#00FFFF" size="1em"/>
+                </SocialLogo>
             </FooterWrap>
             
         </FooterContainer>
