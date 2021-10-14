@@ -24,7 +24,7 @@ export const homeObjTwo = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Project Videos',
-    headline: 'Take a look at my project',
+    headline: 'Take a look at my projects',
     description: 'I have created a remake of the famous tetris game to making my own productive app to keep you focused on your main goals ',
     buttonLabel: 'Watch projects',
     imgStart: true,
@@ -55,3 +55,21 @@ export const homeObjThree = {
     url: "//reynaldo-ayala.medium.com/"
 };
 
+export const homeObjFour = {
+    id: 'project',
+    lightTop: true,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Live Project',
+    headline: 'Get a firsthand look',
+    description: 'Build a website for a client that has a import and export business. Project was build with React.js, stlyed components, and AWS Ampilfy.',
+    buttonLabel: 'View Live Project',
+    imgStart: false,
+    img: require('../../images/svg-13.svg').default,
+    alt: 'clients',
+    dark: true,
+    primary: true,
+    darkText: false,
+    url: "https://www.jbexports.biz/"
+};

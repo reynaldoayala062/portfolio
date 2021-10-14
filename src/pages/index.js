@@ -4,7 +4,7 @@ import Navbar from '../components/NavBar';
 import Home from '../components/Home'
 import InfoSection from '../components/InfoSection'
 import Footer from '../components/Footer'
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
 
@@ -21,8 +21,9 @@ const HomePage = () => {
             <Navbar toggle={toggle} />
             <Home/>
             <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
             <Services/>
+            <InfoSection {...homeObjFour}/>
+            <InfoSection {...homeObjTwo}/>
             <InfoSection {...homeObjThree}/>
             <Contact/>
             <Footer/>
